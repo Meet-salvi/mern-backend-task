@@ -7,8 +7,8 @@ const rateLimit = require('express-rate-limit');
 require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
-const { protect } = require('./middleware/authMiddleware');
 const productRoutes = require('./routes/productRoutes');
+const { protect } = require('./middleware/authMiddleware');
 
 const app = express();
 const PORT = process.env.PORT;
