@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const authRoutes = require('./routes/auth');
 const productRoutes = require('./routes/productRoutes');
-const { protect } = require('./middleware/authMiddleware');
+const { protect } = require('./middleware/auth');
 
 const app = express();
 const PORT = process.env.PORT;

@@ -11,7 +11,7 @@ const {
 } = require("../controllers/productController");
 
 // ✅ Only protect middleware now
-const { protect } = require("../middleware/authmiddleware");
+const { protect } = require("../middleware/auth");
 
 // Public routes
 router.get("/", getProducts);
